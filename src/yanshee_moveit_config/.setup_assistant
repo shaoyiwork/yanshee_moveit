@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: yanshee
+    relative_path: robots/yanshee_leg.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/yanshee.srdf
+  CONFIG:
+    author_name: wilsion
+    author_email: wilsion_huang@outlook.com
+    generated_timestamp: 1573525771

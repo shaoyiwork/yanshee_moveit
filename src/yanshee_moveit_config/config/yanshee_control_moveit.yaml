@@ -1,0 +1,53 @@
+yanshee:
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+  left_arm_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+     - left_arm1_joint
+     - left_arm2_joint
+     - left_arm3_joint
+
+  right_arm_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+     - right_arm1_joint
+     - right_arm2_joint
+     - right_arm3_joint
+
+  left_leg_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+     - left_leg1_joint
+     - left_leg2_joint
+     - left_leg3_joint
+     - left_leg4_joint
+     - left_leg5_joint
+
+  right_leg_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+     - right_leg1_joint
+     - right_leg2_joint
+     - right_leg3_joint
+     - right_leg4_joint
+     - right_leg5_joint
+
+yanshee/gazebo_ros_control/pid_gains:
+     left_arm1_joint:   {p: 100, i: 0.01, d: 10.0}
+      left_arm2_joint:   {p: 100, i: 0.01, d: 10.0}
+      left_arm3_joint:   {p: 100, i: 0.01, d: 10.0}
+      right_arm1_joint:   {p: 100, i: 0.01, d: 10.0}
+      right_arm2_joint:   {p: 100, i: 0.01, d: 10.0}
+      right_arm3_joint:   {p: 100, i: 0.01, d: 10.0}
+      left_leg1_joint:  {p: 100, i: 0.01, d: 10.0}
+      left_leg2_joint:  {p: 100, i: 0.01, d: 10.0}
+      left_leg3_joint:  {p: 100, i: 0.01, d: 10.0}
+      left_leg4_joint:  {p: 100, i: 0.01, d: 10.0}
+      left_leg5_joint:  {p: 100, i: 0.01, d: 10.0}
+      right_leg1_joint:  {p: 100, i: 0.01, d: 10.0}
+      right_leg2_joint:  {p: 100, i: 0.01, d: 10.0}
+      right_leg3_joint:  {p: 100, i: 0.01, d: 10.0}
+      right_leg4_joint:  {p: 100, i: 0.01, d: 10.0}
+      right_leg5_joint:  {p: 100, i: 0.01, d: 10.0}
